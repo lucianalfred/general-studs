@@ -1,0 +1,62 @@
+
+https://pt.wikipedia.org/wiki/Makefile
+https://embarcados.com.br/introducao-ao-makefile/
+https://opensource.com/article/18/8/what-how-makefile
+https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+
+
+Escrevendo as primeiras linhas do makefile
+
+O cerne do makefile consiste em regras definidas da seguinte maneira:
+
+target : prerequisites
+<TAB>recipe
+
+O target é o nome da ação que você deseja executar ou usualmente o nome do arquivo que se queira produzir. Os pré-requisitos são arquivos que são usados como input para criar o target.
+
+A receita é a ação que o comando make realiza. A receita pode ter mais de um comando, na mesma linha ou várias. ATENÇÃO: Você precisa usar o caractere <TAB> no começo de cada receita. O make interpreta como indicação de começo de comando a ser executado.
+
+Praticaremos com um exemplo: vamos supor que temos uma pasta com os seguintes arquivos: main.c, helloWorld.h, helloWorld.c e o makefile que você vai escrever. O GNU reconhece os seguintes nomes para makefile: GNUmakefile, makefile e Makefile. A ferramenta make é sensível a maiúsculas e minúsculas. Você quer criar um binário chamado printy. Abaixo estão descritos os conteúdos dos arquivos respectivos, e iremos depois analisar o arquivo makefile.
+
+Arquivo main.c:
+#include <stdio.h>
+#include <stdlib.h>
+#include "helloWorld.h"
+ 
+int main(){
+    helloWorld();
+    return (0);
+}
+
+Arquivo helloWorld.h:
+#ifndef _H_TESTE
+#define _H_TESTE
+ 
+void helloWorld(void);
+ 
+#endif
+
+Arquivo helloWorld.c:
+#include <stdio.h>
+#include <stdlib.h>
+ 
+void helloWorld(void){
+    printf("Hello World!\n");
+}
+
+Arquivo makefile:
+# My first makefile
+ 
+all: printy
+ 
+printy: main.o helloWorld.o
+    gcc -o printy main.o helloWorld.o
+ 
+main.o: main.c helloWorld.h
+    gcc -o main.o main.c -c -W -Wall -ansi -pedantic
+ 
+helloWorld.o: helloWorld.c helloWorld.h
+    gcc -o helloWorld.o helloWorld.c -c -W -Wall -ansi -pedantic
+ 
+clean:
+    rm -rf *.o *~ printy
