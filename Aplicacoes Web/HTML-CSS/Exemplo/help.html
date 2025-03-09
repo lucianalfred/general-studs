@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+
+    <style>
+        .help{
+            background-color: #f1efe6;
+            border:1px solid #D3CDAE;
+            font-size:0.9em;
+            padding:10px;
+            position:relative;
+            width:300px;
+        }
+
+        .help::before{
+            border-color:transparent #D3CDAE transparent trasparent;
+            border-style:solid;
+            border-width: 14px;
+            content:"";
+            left: -28px;
+            margin-top:-14px;
+            position: absolute;
+            top: 50%;
+        }
+
+        .tip::before{
+            content:"\261E";
+            margin-right: 10px;
+        }
+
+        blockquote{
+            color:#444;
+            font-style: italic;
+        }
+
+        blockquote::before, blockquote::after{
+            color:#000;
+            font-size: 3em;
+        }
+
+        blockquote::before{
+            content:"\201c"
+        }
+        blockquote::after{
+            content:"\201D";
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="help">
+        Preencha o campo com um e-mail válido, assim poderemos entrar em
+contato com você para informar o resultado do nosso concurso.
+    </p>
+
+    <p class="tip">
+        Voce sabia que...
+    </p>
+
+    <blockquote>
+        O problema com citações na Internet é que você não pode
+confirmar a sua veracidade.
+    </blockquote>
+</body>
+</html>

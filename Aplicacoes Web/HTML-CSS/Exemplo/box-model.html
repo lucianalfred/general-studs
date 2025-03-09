@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box{
+            background-color:limegreen;
+            width: 250px;
+        }
+
+        .box-with-padding{
+            background-color: lightblue;
+            padding: 0 25px;
+            width: 250px;
+        }
+
+        section {
+            border:1px solid #000;
+            height: 100px;
+            margin: 40px auto;
+            width: 400px;
+        }
+
+        h1{
+            background-color: #990000;
+            color: #FFF;
+            font-size: 1.2em;
+            left: -10px;
+            padding: 5px 0;
+            position: relative;
+            text-align: center;
+            width: 420px;
+        }
+        h1::before{
+            border-color: transparent#7C0000 #7C0000 transparent;
+            border-style: solid;
+            border-width: 5px;
+            content:"";
+            left: 0;
+            position: absolute;
+            top: -10px;
+        }
+        h1::after{
+            border-color: transparent transparent #7C0000 #7C0000;
+            border-style: solid;
+            border-width:5px;
+            content:"";
+            position: absolute;
+            right: 0;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        elemento sem padding
+    </div>
+    <br>
+    <div class="box-with-padding">elemento com padding</div>
+    <br>
+
+    <section>
+        <h1>Um exemplo de pseudo elementos</h1>
+    </section>
+</body>
+</html>
