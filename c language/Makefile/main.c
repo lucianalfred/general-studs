@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "helloWorld.h"
 
-int main(){
+int main()
+{
     helloWorld();
-    return 0;
+    return (0);
 }

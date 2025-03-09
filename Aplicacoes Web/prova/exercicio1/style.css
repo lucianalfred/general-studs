@@ -1,0 +1,95 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f6fcfd;
+}
+
+header{
+    text-align: center;
+    border-bottom: 2px solid #F2F4F4;
+}
+div#campos{
+    border: 1px solid #000;
+    padding: 1px;
+}
+section{
+    font-size: 12pt;
+    border: 1px solid #000;
+    padding: 2px;
+    margin: 1px;
+
+}
+section#Secformulario{
+    background-color: #FFF;
+    text-align: center;
+}
+#formulario{
+   
+}
+
+form label{
+    margin: 10px;
+    padding: 2px;
+}
+input{
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid #645959;
+    
+}
+.dataNascimento{
+    width: 25px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #645959;
+    
+}
+
+
+.telefone{
+    width: 50px;
+    padding: 6px;
+    
+}
+input#telefone{
+   width: 100px;
+}
+#logo{
+    color: #FFC425;
+   
+}
+
+#logoFormulario{
+    text-align: left;
+}
+
+.container{
+    margin: 0 auto;
+    width: 200px;
+}
+
+select{
+    width: 150px;
+    font-size: 16pt;
+    height: 34px;
+    border: 1px solid red;
+    color:#27AE60;
+}
+
+section#Secformulario2
+{
+   display: flex;
+   justify-content: space-between; 
+}
+
+.coluna{
+    width: 40%;
+    padding: 5px;
+}
+
+button{
+    background-color: #FFC425;
+    padding: 10px;
+    border: none;
+    margin: 3px;
+    border-radius: px;
+}

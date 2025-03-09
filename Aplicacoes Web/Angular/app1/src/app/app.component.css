@@ -1,0 +1,7 @@
+
+.container {
+    width: 80%; /* Ou outro valor adequado */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o conteúdo dentro */
+  }
+  

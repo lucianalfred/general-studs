@@ -1,4 +1,3 @@
-#My first makefile
 all: printy
 
 printy: main.o helloWorld.o
