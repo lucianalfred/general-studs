@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O O css</title>
+
+    <style>
+
+        @media print{
+            *{
+                background: transparent !important;
+                border-color: #000 !important;
+                box-shadow: none !important;
+                color: #000 !important;
+                text-shadow: none !important;
+            }
+
+            a{
+                text-decoration: underline !important;
+            }
+
+            a[href]::after {
+                content: "(" attr(href) ")";
+            }
+
+            a[href^="javascript"]::after, a[href^="#"]{
+                content: "";
+            }
+
+            article{
+                page-break-after:always;
+            }
+
+            .page-break {
+                display: none;
+            }
+        }
+        .button{
+            background-color: #999999;
+            color: #fff;
+            display: inline-block;
+            font-weight: bold;
+            padding:0.5em 1em;
+            text-decoration: none;
+        }
+
+        .primary-button{
+            background-color: #389739;
+        }
+
+        .big-button{
+            font-size: 1.1em;
+        }
+
+        .small-button{
+            font-size: 0.9em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <a href="#" class="button primary-button big-button">Enviar mensagem</a>
+    <a href="#" class="button small-button">Cancelar</a>
+</body>
+</html>

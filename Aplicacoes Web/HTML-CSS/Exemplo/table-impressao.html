@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table{
+            width: 500px;
+        }
+
+        td {
+            border: 1px dotted #666;
+            padding: 5px;
+        }
+        td a{
+            color: #3B5998;
+        }
+
+        .expense, .profit, .actions{
+            text-align:right;
+        }
+
+        .expense, .profit{
+            font-weight: bold;
+        }
+
+        .expense{
+            color:red;
+
+        }
+
+        .profit{
+            column-rule: gree;
+        }
+
+        .actions a{
+            font-size: 0.9rem;
+            color: white;
+            padding: 2px 5px;
+            background-color: #3B5998;
+            text-decoration: none;
+        }
+
+        @media print{
+            *{
+                color: #000 !important;
+            }
+            
+            table {
+                width: 100%;
+            }
+            td{
+                border-color: #000;
+            }
+
+            a::after{
+                content: "(" attr(href) ")";
+                margin-left: 2px;
+            }
+
+            .actions {
+                display: none;
+            }
+
+
+            .expense::before{
+                content: "-  ";
+            }
+            .expense::after{
+                content: " - Despesa";
+            }
+
+            .profit::before{
+                content: "+ ";
+            }
+
+            .profit::after{
+                content: " - Receita";
+            }   
+        }
+    </style>
+</head>
+<body>
+    <h1>Transações de Maio, 2011</h1>
+    <table>
+        <tr>
+            <td>
+                <a href="http://exemplo/transacao/1">Transação 1</a>
+            </td>
+            <td class="expense"> 100,00</td>
+            <td class="actions">
+                <a href="http://exemplo/transacao/1/editar">Editar</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://exemplo/transacao/2">Transação 2</a>
+            </td>
+            <td class="expense"> 200,00</td>
+            <td class="actions">
+                <a href="http://exemplo/transacao/2/editar">Editar</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
