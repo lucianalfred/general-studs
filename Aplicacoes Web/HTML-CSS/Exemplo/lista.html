@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+    <style>
+        ul {
+            height: 35px;
+            list-style: none;
+            padding: 0;
+            width: 210px;
+
+            background-color: #047ccc;
+            color: white;
+            
+            border: 1px solid rgba(0,0,0,0.3);
+        }
+        li {
+            float: left;
+            line-height: 35px;
+            font-size: 0.9em;
+            width: 50px;
+            text-align: center;
+
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-right: 1px solid rgba(0,0,0,0.30);
+        }
+
+        li:first-child{
+            border-left: none;
+        }
+        li:last-child{
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Um</li>
+        <li>dois</li>
+        <li>Tres</li>
+        <li>Quatro</li>
+    </ul>
+</body>
+</html>

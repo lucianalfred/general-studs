@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+
+    <style>
+        div {
+            font-weight: bold;
+            height: 50px;
+            line-height: 25px;
+            margin-bottom: 10px;
+            padding: 5px;
+            text-align: center;
+            width: 220px;
+        }
+        .blue {
+            background-image: linear-gradient(top, #4377FA, #0537B7);
+        }
+        .reverse-blue {
+            background-image: linear-gradient(top, #0537B7, #4377FA);
+        }
+        .omg-pink {
+            background-image: linear-gradient(top right, #FC0050, #FF79A3);
+        }
+        .stops {
+            background-image: linear-gradient(top, #F5B951 48%, #F2A31C 56%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class='blue'>
+        Um gradiente azul clássico, utilizando 2 tons similares.
+   </div>
+    <div class='reverse-blue'>
+        Uma versão inversa do gradiente azul.
+    </div>
+    <div class='omg-pink'>
+        Combinando "top" e "right" para a direção.
+    </div>
+    <div class='stops'>
+        Utilizando posições específicas para as cores.
+    </div>
+</body>
+</html>
