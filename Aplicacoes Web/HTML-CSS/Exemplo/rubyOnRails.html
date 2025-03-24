@@ -6,6 +6,14 @@
     <title>Ruby On Rails</title>
 
     <style>
+
+        @font-face{
+            font-family: 'IconicFill';
+            src: url('iconic_fill.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         h1{
             color: #BD2C00;
             font-size: 1.2em;
@@ -25,6 +33,68 @@
             padding: 3px 7px;
             text-shadow: 0 1px 2px rgba(0,0,0,0.7);
         }
+
+        ul {
+            background-color: #56B4EF;
+            background-image:linear-gradient(top, #56B4EF, #148EDA);
+            float:left;
+            list-style: none;
+            margin: 10px 10px 0 0;
+            padding: 0;
+            width: 230px;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+
+        .icon{
+            color: #FFF;
+            display: block;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px;
+            text-decoration: none;
+            text-shadow:0 1px 0 rgba(0,0,0,0.9);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+        .icon:hover{
+            background-color: rgba(0,0,0,0.1);
+        }
+        .icon.paper{
+            border-top: none;
+        }
+        .icon.package{
+            border-bottom: none;
+        }
+        .icon::before{
+            font-family: 'IconicFill';
+            margin: 0px 5px;
+        }
+        .paper::before{
+            content: "\e00b";
+        }
+        .digital::before{
+            content: "\e044";
+        }
+        .package::before{
+            content: "\e022";
+        }
+
+        .book{
+            background-color: #FAFAFA;
+            background-image: linear-gradiente(#fafafa,#EEE);
+            border-radius: 5px;
+            border:1px solid #CCC;
+            padding: 10px;
+            width: 600px;
+
+        }
+
+        .clear{
+            clear:both;
+        }
+        
     </style>
 </head>
 <body>
@@ -32,8 +102,23 @@
         <header>
             <h1>Ruby on Rails: coloque sua aplicação web nos trilhos</h1>
             <h2>Vinicius Baggio</h2>
-            <span class="available">Disponivel</span>
+        
         </header>
+        <span class="available">Disponivel</span>
+        <div class="clear"></div>
+        <ul>
+            <li><a href="#" class="icon paper">Comprar a versao fisica</a></li>
+            <li><a href="#" class="icon digital">Comprar a versao digital</a></li>
+            <li>
+                <a href="#" class="icon package">Comprar a versao fisica</a>
+            </li>
+        </ul>
+        
+        <p>
+            Uma ótima leitura para iniciantes afim de se aventurar no ecossistema
+            de Ruby.
+        </p>
+        <div class="clear"></div>
     </article>
 </body>
 </html>
