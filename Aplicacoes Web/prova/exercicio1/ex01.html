@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Superior Politecnico de Tecnologia</title>
+
+    <style>
+        div#campos{
+            border: 1px solid #000;
+
+        }
+
+        
+        #campos2, #campos1{
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><span id="logo">Instituto Superior Politecnico</span> de Tecnologia e Ciencias</h2>
+    </header>
+</body>
+    <form>
+        <div id="campos" class="">
+            <div id="campos1">
+                <h3 id="logoFormulario">Dados Pessoais: </h3>
+                <p><label for="nome">Nome:</label><input type="text" name="nome" id="nome"/></p>
+                <p><label for="dataNascimento">Data Nascimento: </label><input type="text" id="dia" class="dataNascimento" placeholder="dd"> / <input type="text" id="mes" class="dataNascimento" placeholder="mm"> / <input type="text" id="mes" class="dataNascimento" placeholder="aaaa"> </p>
+                <p><label for="nomeDaMae">Nome da Mãe: </label><input type="text" id="nomeDaMae" name="nomeDaMae"/></p>
+                <p><label for="nomeDoPai">Nome do Pai: </label><input type="text" id="nomeDoPai" name="nomeDoPai"/></p>
+                <p><label for="telefone">Telefone: </label> Tel <input type="text" id="telefone" class="telefone" name="telefone"/> Codigo:<input type="text"  class="telefone" id="codigo" name="codigo"/></p>
+                
+        
+            </div>
+
+            <div id="campos2">
+                <div class="coluna" id="anoInfo">
+                    <h3 id="logoFormulario">Informações de Matrícula</h3>
+                    <h4><label for="ano">Ano</label></h4>
+                    <select id="ano">
+                        <option selected disabled>Selecione</option>
+                        <option>1 ano</option>
+                        <option>2 ano</option>
+                        <option>3 ano</option>
+                        <option>4 ano</option>
+                        <option>5 ano</option>
+                    </select>
+                </div>
+
+                <div class="coluna" id="turnoInfo">
+                    <h4>Turno</h4>
+                    <p> 
+                        <label>
+                            <input type="radio" name="manha" valor = "manha">Manhã
+                        </label>
+                     </p>
+
+                     <p> 
+                        <label>
+                            <input type="radio" name="tarde" valor = "manha">Tarde
+                        </label>
+                     </p>
+
+                </div>
+
+                <div class="coluna" id="actividadesInfo">
+                    <h4>Actvidades Extracurriculares</h4>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="actividades" value="informatica">Informática
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="actividades" value="musica">Música
+                        </label>
+                    </p>
+                     <p>
+                        <label>
+                            <input type="checkbox" name="actividades" value="ballett">Ballet
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="actividades" value="pintura">Pintura
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <label>  
+                            <input type="checkbox" name="actividades" value="judo">Judô
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="actividades" value="futebol">futebol
+                        </label>
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            
+        </div>
+        <div  class="container">
+            <button type="submit">Gravar</button>
+            <button  type="reset">Limpar Campos</button>
+        </div>
+    </form>
+    
+</html>
