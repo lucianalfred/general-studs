@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando a imagem</title>
+
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            color: #fff;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        .quadro_imagem img{
+            border: 2px solid rgb(189, 12, 12);
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Imagens</h2>
+    </header>
+    <div>
+        <figure class="quadro_imagem">
+            <img alt="imagem dinamica" id="imagem" src="images/anime1.jpeg"/>
+            <figcaption id="banner">Imagem dinamica</figcaption>
+        </figure>
+    </div>
+
+
+    <script>
+        const imagem = document.getElementById('imagem');
+        const bannerLed = document.getElementById('banner');
+
+        const quantidade = 4;
+
+        let banner = ["Todo anime", "Traz uma historia boa", "E inspira o mundo"]
+        let index = 1;
+        function change(){
+            index = (index + 1)%quantidade;
+            
+            if(index == 0)
+            {
+                index = 1;
+            }
+            let src = "images/anime"+index+'.jpeg';
+
+            imagem.src = src;
+            bannerLed.innerHTML = banner[index-1];
+
+
+        }
+        
+        setInterval(change,1000);
+    </script>
+</body>
+</html>

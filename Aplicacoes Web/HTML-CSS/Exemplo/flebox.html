@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flebox</title>
+
+    <style>
+        .flexbox {
+            /*
+            De acordo com a nova especificação, o valor "flexbox"
+            deverá ser substituído por apenas "flex".
+            */
+            display: flexbox;
+            height: 60px;
+            width: 300px;
+        }
+
+        .box {
+            color: #FFF;
+            display: block;
+            flex: auto;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .one {background-color: #8820DD;}
+        .two {background-color: #2BB15A;}
+        .three {background-color: #755322;}
+        
+        
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <span class="one box">1</span>
+        <span class="two box">2</span>
+        <span class="three box">3</span>
+    </div>
+</body>
+</html>

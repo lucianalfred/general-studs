@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes js</title>
+</head>
+<body>
+    
+    <p id="paragrafo">Eu sou um paragrafo por definicao</p>
+    <input type="submit" onclick="mudarTextoParagrafo()" value="Clica-me"/>
+
+    <script>
+        function mudarTextoParagrafo(){
+            document.getElementById('paragrafo').style.color = "red";
+            document.getElementById('paragrafo').style.fontSize = "25px";
+            document.getElementById('paragrafo').innerHTML = "O meu texto mudou";
+            
+        }
+    </script>
+</body>
+</html>

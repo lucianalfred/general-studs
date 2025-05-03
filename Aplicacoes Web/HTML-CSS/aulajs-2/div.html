@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <div class="square" id="move">
+        <div class="rotulo" onmousemove="incrementCounter1()">
+            onmousemove:
+            <p id="counter1">0</p>
+        </div>
+        
+    </div>
+    <div class="square" id="enter">
+        <div class="rotulo" onmouseenter="incrementCounter2()">
+            onmouseenter:
+            <p id="counter2">0</p>
+        </div>
+        
+    </div>
+    <div class="square" id="over">
+        <div class="rotulo" onmouseover="incrementCounter3()">
+            onmouseover:
+            <p id="counter3">0</p>
+        </div>
+        
+    </div>
+
+<script src="js/script1.js"></script>
+</body>
+</html>

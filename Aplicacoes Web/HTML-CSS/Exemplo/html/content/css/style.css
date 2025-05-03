@@ -1,0 +1,70 @@
+body{
+    background-color:#ffffff;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo{
+    color: rgb(0, 194, 97);
+    text-align:center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.nav{
+    list-style:none;
+    margin: 2px;
+}
+
+.nav li{
+    float:left;
+    margin: 5px;
+    border-right: 1px solid  rgb(29, 202, 14);
+    padding: 2.5px;
+}
+
+.nav-element a{
+ color: rgb(29, 202, 14);
+ text-decoration:none
+ 
+}
+
+.container{
+    margin: 0 auto;
+    width: 200px;
+}
+
+.retangulo{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius:5px;
+    margin: 5.5px;
+    float: left;
+    border: 3px dashed   #000;
+
+}
+
+.retangulo.red{
+    background-color:red;
+}
+
+.retangulo.blue{
+    background-color: blue;
+}
+
+.retangulo.green{
+    background-color: rgb(42, 185, 6);
+}
+
+#seta{
+    color: rgb(42, 185, 6);
+    text-decoration: none;
+    
+
+}
+#seta::before{
+    content: "\2190";
+    width: 2px;
+    height: 5px;
+}

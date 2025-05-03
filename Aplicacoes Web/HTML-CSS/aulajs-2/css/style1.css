@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+
+}
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(188, 209, 209);
+}
+
+div{
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+}
+
+.rotulo{
+    width: 200px;
+    height: 80px;
+    margin: 0 auto;
+    
+    margin-top: 75px;
+    padding: 3px;
+    background-color: white;
+}
