@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        label{
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: bold;
+            width: 90px;
+        }
+
+        input, textarea{
+            display: inline-block;
+            width: 200px;
+            border: 1px solid #CCC;
+            box-shadow: inset 2px 2px 2px #EEE;
+            font-size: 0.9rem;
+            padding: 2px 5px;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        .hint {
+            
+            background-color: #FFFBE4;
+            border-radius: 3px;
+            border: 1px solid #CCC;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-left: 20px;
+            padding: 3px;
+        }
+
+        .hint{
+            display: none;
+        }
+
+        input:focus + .hint, textarea:focus + .hint {
+            display: inline-block;
+        }
+
+        .error {
+            color: red;
+            display: block;
+            font-size: 0.8rem;
+            font-style: italic;
+            margin: 5px 0 0 90px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"/>
+            <span class="hint">por exemplo, seunome@dominio.</span>
+            <span class="error">Preencha o seu e-mail correctamente.</span>
+        </p>
+
+        <p>
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject"/>
+            <span class="hint">Nos diga qual e o seu problema ou ideia.</span>
+        </p>
+        <p>
+            <label for="content">Messagem</label>
+            <textarea id="content"></textarea>
+            <span class="hint">
+               Escreva a sua mensagem, e ate 500 caracteres.
+            </span>
+            
+        </p>
+        <p>
+            <button>Enviar mensagem</button>
+        </p>
+    </form>
+</body>
+</html>
